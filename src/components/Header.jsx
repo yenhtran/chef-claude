@@ -7,7 +7,7 @@ export default function Header() {
         src={chefClaudeIcon}
         alt='robot chef icon'
       />
-      <h2>Chef Claude</h2>
+      <h1>Chef Claude</h1>
     </header>
   )
 }
