@@ -1,4 +1,12 @@
 export default function Main() {
+  const ingredients = ['Tofu','Pho','Hoisin Sauce']
+
+  const ingredientListItems = ingredients.map((item) => {
+    return (
+      <li key={item}>{item}</li>
+    )
+  })
+
   return (
     <main>
       <form className="add-ingredient-form">
@@ -9,6 +17,9 @@ export default function Main() {
         />
         <button>Add ingredient</button>
       </form>
+      <ul>
+        {ingredientListItems}
+      </ul>
     </main>
   )
 }
